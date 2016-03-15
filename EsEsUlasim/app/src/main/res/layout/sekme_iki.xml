@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#ffffff"
+    style="@style/btnStyleopal">
+    <Spinner android:layout_height="40dp" android:layout_width="150dp"
+        android:background="#fbf8f8" android:id="@+id/spinner3"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content"
+        android:id="@+id/button4"
+        android:text="GEÇTİĞİ DURAKLARI GÖR"
+        android:layout_below="@+id/spinner3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        style="@style/btnStyleopal" />
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="#ffffff" android:id="@+id/textView2" android:text=" OTOBÜS SEÇ"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="53dp" />
+
+    <ListView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/listView4" android:layout_alignParentStart="true" android:layout_below="@+id/button4"/>
+
+</RelativeLayout>

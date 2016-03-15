@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <Spinner android:layout_height="30dp" android:layout_width="150dp" android:id="@+id/spinner"
+        android:background="#f3f3e3"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/textView5"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner android:layout_height="30dp" android:layout_width="150dp" android:id="@+id/spinner2" android:background="#f3f3e3"
+        android:layout_above="@+id/button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content"
+        android:id="@+id/button3" android:text="OTOBÜSLERİ GÖRÜNTÜLE"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        style="@style/btnStyleopal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" ÇIKIŞ DURAĞI SEÇ"
+        android:id="@+id/textView"
+        android:textSize="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/spinner"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" VARIŞ DURAĞI SEÇ"
+        android:id="@+id/textView5"
+        android:textSize="20dp"
+        android:layout_above="@+id/spinner2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DURAKLARI HARİTADA GÖR"
+        android:id="@+id/button"
+        android:layout_above="@+id/button3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:tag="styles:"
+        style="@style/btnStyleopal" />
+
+    <ListView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/listView3"
+        android:background="#ffffff"
+        android:layout_alignParentStart="true"
+
+        android:layout_below="@+id/textView6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favorilere Eklemek İçin Otobus Üzerine Tıklayınız"
+        android:id="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button3" />
+
+
+    <Button android:text="Click me!"
+        android:id="@+id/BtnToClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="myClickHandler">
+    </Button>
+</RelativeLayout>
